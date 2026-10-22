@@ -1,4 +1,4 @@
-from locust import HttpUser, task
+from tests.locustfile import HttpUser, task
 class LoadTestUser(HttpUser):
     @task
     def get_post(self):
